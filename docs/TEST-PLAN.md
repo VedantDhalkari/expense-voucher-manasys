@@ -17,9 +17,9 @@
 - **Step 4 (Registry)**: Accounts user logs in and verifies the presence of the `APPROVED` voucher in the All Vouchers Registry.
 
 ## 3. Signature Upload Testing
-- Upload a standard PNG/JPG signature via `POST /api/upload/signature`.
-- Verify the file is physically written to `server/uploads/signatures/`.
-- Ensure the server serves this static file correctly to authenticated users.
+- Upload a standard PNG/JPG signature via `POST /api/upload/signature` (ensure size < 2MB).
+- Verify the file is physically written to `server/uploads/signatures/` with a server-generated filename.
+- Verify that attempting to fetch the signature via `GET /api/vouchers/:id/signatures/:type` works for authorized roles and returns a 401/403 for unauthorized users.
 
 ## 4. UI Precision & Styling
 - Verify tabular figures (`font-feature-settings: "tnum" 1`) are active on all currency amounts.
