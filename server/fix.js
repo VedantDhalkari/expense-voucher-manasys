@@ -1,0 +1,11 @@
+const fs = require('fs');
+const path = require('path');
+const p = path.join('prisma', 'migrations', '20260904000000_init', 'migration.sql');
+let content = fs.readFileSync(p, 'utf16le');
+if (content.charCodeAt(0) === 0xfeff) content = content.slice(1);
+content += `\nALTER TABLE "Voucher" ADD CONSTRAINT "voucher_amount_check" CHECK (amount > 0);\n`;
+content += `ALTER TABLE "Voucher" ADD CONSTRAINT "voucher_employee_sig_check" CHECK (status = 'DRAFT' OR "employeeSignatureKey" IS NOT NULL);\n`;
+content += `ALTER TABLE "Voucher" ADD CONSTRAINT "voucher_director_sig_check" CHECK (status != 'APPROVED' OR ("directorSignatureKey" IS NOT NULL AND "approvedAt" IS NOT NULL));\n`;
+content += `ALTER TABLE "Voucher" ADD CONSTRAINT "voucher_rejection_check" CHECK (status != 'REJECTED' OR "rejectionReason" IS NOT NULL);\n`;
+fs.writeFileSync(p, content, 'utf8');
+console.log('Fixed migration.sql');
