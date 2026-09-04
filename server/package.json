@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "tsx watch src/server.ts",
     "db:migrate:dev": "prisma migrate dev",
     "db:migrate:apply": "prisma migrate deploy",
     "db:seed": "prisma db seed",
     "db:status": "prisma migrate status",
     "prisma:generate": "prisma generate",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsx scripts/test-auth.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

@@ -21,7 +21,7 @@ async function main() {
 
   const employee = await prisma.user.upsert({
     where: { email: 'employee@expenseflow.com' },
-    update: {},
+    update: { password: passwordHash },
     create: {
       email: 'employee@expenseflow.com',
       password: passwordHash,
@@ -31,7 +31,7 @@ async function main() {
 
   const director = await prisma.user.upsert({
     where: { email: 'director@expenseflow.com' },
-    update: {},
+    update: { password: passwordHash },
     create: {
       email: 'director@expenseflow.com',
       password: passwordHash,
@@ -41,7 +41,7 @@ async function main() {
 
   const accounts = await prisma.user.upsert({
     where: { email: 'accounts@expenseflow.com' },
-    update: {},
+    update: { password: passwordHash },
     create: {
       email: 'accounts@expenseflow.com',
       password: passwordHash,
