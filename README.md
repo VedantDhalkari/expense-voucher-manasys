@@ -138,6 +138,19 @@ flowchart TB
 
 ---
 
+<img width="1600" height="907" alt="screen" src="https://github.com/user-attachments/assets/1c033d5a-265c-48ec-91f2-93c6161b5e95" />
+<img width="1357" height="1600" alt="screen" src="https://github.com/user-attachments/assets/5ac32d15-ca4b-4133-b4c6-d937a0cf4afa" />
+<img width="1511" height="1600" alt="screen" src="https://github.com/user-attachments/assets/8c67b014-488b-45bd-9cd0-4fbe6030e6de" />
+<img width="1137" height="1600" alt="screen" src="https://github.com/user-attachments/assets/90755755-da8f-40bb-a665-0c91f8bf01f5" />
+<img width="1434" height="1600" alt="screen" src="https://github.com/user-attachments/assets/1e099e8c-cb58-4218-9552-6d80ac25b225" />
+<img width="1600" height="1475" alt="screen" src="https://github.com/user-attachments/assets/0414507e-f320-436a-a948-59bbe41d4e2d" />
+<img width="1491" height="1600" alt="screen" src="https://github.com/user-attachments/assets/e423cd32-f951-4122-93e7-297a1623b209" />
+<img width="1543" height="1600" alt="screen" src="https://github.com/user-attachments/assets/f6e0a1ae-58e3-4211-87de-07a2badc3983" />
+<img width="1600" height="1586" alt="screen" src="https://github.com/user-attachments/assets/954e4ee0-241b-4d71-a4a1-6f723d72f99d" />
+<img width="1600" height="970" alt="screen" src="https://github.com/user-attachments/assets/c7117481-c6d4-4a3e-921b-18fda01c03a3" />
+<img width="1189" height="1600" alt="screen" src="https://github.com/user-attachments/assets/80e86b2d-876c-4d24-9150-6ea98c8372eb" />
+<img width="1258" height="1600" alt="screen" src="https://github.com/user-attachments/assets/6744b133-40af-4572-9431-af9f632fb950" />
+
 ## Project Setup Instructions
 
 ### Prerequisites
@@ -565,8 +578,9 @@ Employee logs in
 - [x] API documentation
 - [x] Database schema explanation
 - [x] Assumptions documentation
-- [x] Screenshots or short localhost demo video
+- [x] Screenshots or short localhost demo video    
 
 ---
 
 Built as a Full Stack Developer Internship Assignment.
+
